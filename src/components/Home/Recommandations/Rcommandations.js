@@ -16,7 +16,8 @@ const Recommandations = () => {
            <img src="https://i.ibb.co/BTD8JcJ/Untitled-design-47.png" alt="" />
            </div>
             <div className="recommand-detail">
-              <p>Some up and coming trends are healthcare consolidation for independent healthcare centers that see a cut in unforeseen payouts.</p>
+              <p>Some up and coming trends are healthcare consolidation for independent healthcare centers that 
+                see a cut in unforeseen payouts.</p>
               <h2>CHASE FRANKLIN</h2>
               <h5>CEO, CARE MEDICO</h5>
             </div>

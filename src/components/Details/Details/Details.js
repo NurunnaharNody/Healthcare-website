@@ -5,22 +5,21 @@ import Detail from '../Detail/Detail';
 
 const Details = () => {
     const {serviceId} = useParams();
-    const [service, setService] = useState([]);
+    const [services, setServices] = useState([]);
     useEffect(() => {
-          fetch('../../../../public/services.json')
+          fetch('/services.json')
           .then(res => res.json())
-          .then(data => setService(data));
-    }, [])
+          .then(data => setServices(data))
+    },[])
+    useEffect(() =>{
+       const singleService = services?.find(service => service.id === serviceId)
+       setServices(singleService)
+    }, [services])
     return (
-        <div>
-            <br />
-            <br />
-            <br />
-            <br />
-            <h2> this is {serviceId} </h2>
-           {
-               service.map(servi => <Detail name={servi.Title} service={servi}></Detail>)
-           }
+        <div> 
+          {/* {
+              services.map(service => <Detail key={service.id} service={service}></Detail>)
+          } */}
         </div>
     );
 };

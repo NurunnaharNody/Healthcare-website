@@ -10,14 +10,14 @@ const Service = ({service}) => {
 <Row className="g-4 mx-auto p-5">
   {Array.from({ length:1}).map((_, idx) => (
     <Col>
-      <Card>
+      <Card className="card-style">
         <Card.Img variant="top" src={img} />
-        <Card.Body>
+        <Card.Body className="service-card">
           <Card.Title>{Title}</Card.Title>
           <Card.Text>
           {Description}
           </Card.Text>
-          <Link to={`/details/${id}`}><Button variant="info">Go For {Title}</Button></Link>
+          <Link to={`/details/${id}`}><Button className="button-service" variant="info">Go For {Title}</Button></Link>
         </Card.Body>
       </Card>
     </Col>

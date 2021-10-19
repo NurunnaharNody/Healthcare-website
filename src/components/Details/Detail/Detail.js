@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Detail = ({servi}) => {
-    const {img, Title} = servi;
+const Detail = ({service}) => {
+    const {img, Title} = service;
     return (
         <div>
             <img src={img} alt="" />
