@@ -11,15 +11,15 @@ const Details = () => {
           .then(res => res.json())
           .then(data => setServices(data))
     },[])
-    useEffect(() =>{
-       const singleService = services?.find(service => service.id === serviceId)
-       setServices(singleService)
-    }, [services])
+    // useEffect(() =>{
+    //    const singleService = services?.find(service => service.id === serviceId)
+    //    setServices(singleService)
+    // }, [services])
     return (
         <div> 
-          {/* {
+            {
               services.map(service => <Detail key={service.id} service={service}></Detail>)
-          } */}
+          }
         </div>
     );
 };
