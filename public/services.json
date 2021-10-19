@@ -1,0 +1,44 @@
+[
+    {
+      "id": 1,
+      "Title": "Peripheral artery angioplasty",
+      "Description": "Angioplasty with stent placement is a minimally invasive procedure used to open narrow or blocked arteries. This procedure is used in different parts of your body, depending on the location of the affected artery.",
+      "img": "https://i.ibb.co/g9LX8qQ/Untitled-design-23.png"
+    },
+    {
+      "id": 2,
+      "Title": "Valve prolapse",
+      "Description": "Quickly incentivize impactful action items before tactical collaboration and idea-sharing. Monotonically engage intellectual capital through wireless opportunities.",
+      "img": "https://i.ibb.co/ZVTzMKh/Untitled-design-27.png"
+    },
+    {
+      "id": 3,
+      "Title": "Pacemaker",
+      "Description": "A pacemaker is an electrically-charged medical device. Your surgeon implants it under your skin to help manage irregular heartbeats called arrhythmias.",
+      "img": "https://i.ibb.co/zRyLFy9/Untitled-design-28.png"
+    },
+    {
+      "id": 4,
+      "Title": "Heart Surgery",
+      "Description": "Uniquely deploy cross-unit benefits with wireless testing procedures.Collaboratively build backward compatible relationships whereas tactical paradigms.",
+      "img": "https://i.ibb.co/zfWsrY5/Untitled-design-29.png"
+    },
+    {
+      "id": 5,
+      "Title": "Valve diseases",
+      "Description": "Heart valve disorders can affect any of the valves in your heart. Your heart valves have flaps that open and close with each heartbeat, allowing blood to flow through the heart’s upper and lower chambers and to the rest of your body.",
+      "img": "https://i.ibb.co/RPsWGF7/Untitled-design-24.png"
+    },
+    {
+      "id": 6,
+      "Title": "Heart transplant",
+      "Description": "A heart transplant is a surgical procedure used to treat the most serious cases of heart disease. This is a treatment option for people who are in the end stages of heart failure. Medication, lifestyle changes, and less invasive procedures haven’t succeeded. ",
+      "img": "https://i.ibb.co/WsG4VbW/Untitled-design-30.png"
+    },
+    {
+      "id": 7,
+      "Title": "Emergencies",
+      "Description": "Globally harness multimedia based collaboration and idea-sharing with backend products. Continually whiteboard superior opportunities via covalent scenarios.",
+      "img": "https://i.ibb.co/0MfQHVc/Untitled-design-31.png"
+    }
+  ]

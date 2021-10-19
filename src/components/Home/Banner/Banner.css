@@ -1,0 +1,26 @@
+.banner-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.title{
+    font-size: 70px;
+    text-align: center;
+    color: rgb(28, 50, 88);
+    font-weight: bolder;
+}
+
+@media only screen and (max-width:688px){
+    .banner-section{
+        display:inline;
+    }
+    .banner-image img{
+        padding-top: 40px;
+        padding-left: 80px;
+        width:80%;
+    }
+}
+@media only screen and (man-width:688px) and (max-width:991px){
+    
+}

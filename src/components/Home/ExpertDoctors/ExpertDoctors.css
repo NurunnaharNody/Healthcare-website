@@ -1,0 +1,19 @@
+.expert-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 5px;
+}
+@media only screen and (max-width:688px){
+    .expert-container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .single-doctor{
+        margin-left: 70px;
+    }
+}
+@media only screen and (man-width:688px) and (max-width:991px){
+    .expert-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
