@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from '../Banner/Banner';
 import ExpertDoctors from '../ExpertDoctors/ExpertDoctors';
 import Header from '../Header/Header';
+import MedicareUpdate from '../Recommandations/Rcommandations';
 import Services from '../Services/Services';
 
 const Home = () => {
@@ -12,6 +13,9 @@ const Home = () => {
             </div>
             <div>
     <Banner></Banner>
+ </div>
+ <div>
+     <MedicareUpdate></MedicareUpdate>
  </div>
  <div>
    <Services></Services>

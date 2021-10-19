@@ -1,0 +1,54 @@
+  /* footer section styles  */
+
+.footer-section{
+    background-color: rgb(115, 141, 255);
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+/* footer logo styles  */
+
+.footer-logo{
+   padding:30px;
+}
+.footer-logo h3{
+    font-weight: bolder;
+    color: rgb(1, 1, 27);
+}
+
+
+/* footer detail styles  */
+.footer-detail h2{
+    color: rgb(23, 3, 49);
+    font-weight: 600;
+    font-size: 25px;
+}
+
+
+/* footer contact dtyles  */
+.footer-contact h2{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: serif;
+  color: rgb(12, 3, 32);
+}
+
+.footer-contact h3, h4{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: serif;
+    color: rgb(12, 3, 32);
+  }
+
+  @media only screen and (max-width:688px){
+    .footer-section{
+        display: inline;
+        background-color: rgb(172, 142, 246);
+        height: 800px;
+    }
+}

@@ -5,7 +5,7 @@ import useAuth from '../../../hooks/useAuth';
 import './LogIn.css'
 
 const LogIn = () => {
-    const {signInUsingGoogle} = useAuth();
+    const {signInUsingGoogle, signInUsingGithub} = useAuth();
     return (
         <div className="p-5 form">
             <br/>
@@ -31,7 +31,9 @@ const LogIn = () => {
                   </p>        
                   <div>--------OR--------</div>
                   <br />
-            <button onClick={signInUsingGoogle} className="btn btn-primary">Google Sign In</button>
+            <button onClick={signInUsingGoogle} className="btn m-2 btn-primary">Google Sign In</button>
+            <button onClick={signInUsingGithub} className="btn btn-primary">Github Sign In</button>
+
         </div>
     );
 };

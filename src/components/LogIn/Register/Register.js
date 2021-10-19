@@ -1,8 +1,10 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 
 const Register = () => {
+    const {signInUsingGoogle, signInUsingGithub} = useAuth();
     return (
         <div className="p-5 form">
             <br />
@@ -36,7 +38,8 @@ const Register = () => {
 <p> Already Have an account? <Link to="/login">Log In</Link>  </p>
  <div>-------OR------</div>
  <br />
- <button className="btn-primary">Google-Sign-In</button>
+ <Button onClick={signInUsingGoogle}  className="btn btn-primary m-2">Google Sign-In</Button>
+ <Button onClick={signInUsingGithub}  className="btn btn-primary">Github Sign-In</Button>
         </div>
     );
 };

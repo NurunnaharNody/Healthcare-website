@@ -1,8 +1,10 @@
+ /* banner section styles  */
 .banner-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+    padding-bottom: 60px;
 }
 .title{
     font-size: 70px;
@@ -11,6 +13,7 @@
     font-weight: bolder;
 }
 
+/* responsive styles  */
 @media only screen and (max-width:688px){
     .banner-section{
         display:inline;

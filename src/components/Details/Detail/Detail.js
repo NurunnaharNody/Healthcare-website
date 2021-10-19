@@ -1,14 +1,11 @@
 import React from 'react';
-import { useParams } from 'react-router';
 
-const Detail = () => {
-    const {serviceId} = useParams();
+const Detail = ({servi}) => {
+    const {img, Title} = servi;
     return (
         <div>
-            <br/>
-            <br/>
-            <br/>
-            <h2>This is booking: {serviceId}</h2>
+            <img src={img} alt="" />
+            <h2>{Title}</h2>
         </div>
     );
 };

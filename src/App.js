@@ -1,10 +1,12 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Switch, Route } from 'react-router-dom';
 import './App.css';
-import Detail from './components/Details/Detail/Detail';
+import Details from './components/Details/Details/Details';
+import Footer from './components/Home/Footer/Footer';
 import Header from './components/Home/Header/Header';
 import Home from './components/Home/Home/Home';
 import NotFound from './components/Home/NotFound/NotFound';
+import Recommandations from './components/Home/Recommandations/Rcommandations';
 import LogIn from './components/LogIn/LogIn/LogIn';
 import PrivateRoute from './components/LogIn/PrivateRoute/PrivateRoute';
 import Register from './components/LogIn/Register/Register';
@@ -29,13 +31,17 @@ function App() {
      <Route path="/login">
        <LogIn></LogIn>
        </Route>
+       <Route path="/recommandations">
+         <Recommandations></Recommandations>
+         </Route>
      <PrivateRoute path="/details/:serviceId">
-         <Detail></Detail>
+         <Details></Details>
        </PrivateRoute>
      <Route path="*">
        <NotFound></NotFound>
      </Route>
    </Switch>
+   <Footer></Footer>
    </BrowserRouter>
    </AuthProvider>
   </div>
