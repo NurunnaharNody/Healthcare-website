@@ -69,10 +69,8 @@ const handlePasswordChange = e =>{
 
     const signInUsingGoogle = () =>{
         setIsLoading(true);
-        signInWithPopup(auth, googleProvidor)
-        .then(result => {
-            setUser(result.user)
-        } )
+       return signInWithPopup(auth, googleProvidor)
+        
         .finally(() => setIsLoading(false));
     }
 
@@ -90,7 +88,6 @@ const handlePasswordChange = e =>{
         signOut(auth)
         .then(() => {
         setUser({})
-        .finally(() => setIsLoading(false));
         })
     }
     useEffect( () =>{

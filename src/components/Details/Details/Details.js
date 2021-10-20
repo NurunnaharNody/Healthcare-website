@@ -21,6 +21,15 @@ const Details = () => {
         <div> 
              <br />
              <br />
+             <br />
+             <div className="doctor-talk">
+             <h2>WELCOME TO OUR HOSPITAL</h2>
+             <h1> The Care Medico of Better Care </h1>
+             <h4>It’s always the word of mouth that’s the best advice. Need to contact with us..
+                 <br />
+                 Go for contact.
+             </h4>
+            </div>
              <div className="service-container">
 <Row className="g-4 mx-auto p-5">
   {Array.from({ length:1}).map((_, idx) => (
