@@ -27,8 +27,8 @@ const Header = () => {
     <Nav className="me-auto mx-auto header-links">
       <Nav.Link as={HashLink} to="/home#home">Home</Nav.Link>
       <Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
-      <Nav.Link as={HashLink} to="/home#experts">Care Experts</Nav.Link>
-      <Nav.Link as={HashLink} to="/home#recommandations">Recommandations</Nav.Link>
+      <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
+      <Nav.Link as={Link} to="/contacts">Contacts</Nav.Link>
       {user.email ?
         <Button onClick={logOut} className="btn-dark">Log Out </Button>
         :

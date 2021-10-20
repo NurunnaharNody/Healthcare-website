@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged,GithubAuthProvider, signOut} from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged,GithubAuthProvider, 
+    createUserWithEmailAndPassword, signInWithEmailAndPassword ,  signOut} from "firebase/auth";
 import initailizeAuthenticaton from '../components/LogIn/Firebase/firebase.init';
 
 initailizeAuthenticaton();
@@ -10,6 +11,61 @@ const useFirebase = () => {
     const auth = getAuth();
     const googleProvidor = new GoogleAuthProvider();
     const githubProvidor = new GithubAuthProvider();
+
+    const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [isLogin, setIsLogin] = useState(false);
+  const toggleLogIn = e => {
+    setIsLogin(e.target.checked);
+  }
+
+
+const handleEmailChange=e=> {
+         setEmail(e.target.value);
+}
+
+const handlePasswordChange = e =>{
+     setPassword(e.target.value)
+}
+  const handleRegistration = e => {
+    e.preventDefault();
+     console.log(email, password);
+     if(password.length < 6){
+       setError('password must be at least 6 charcters long')
+       return;
+     }
+     if(!/(?=.*[A-Z].*[A-Z])/.test(password)){
+       setError('password Must contain 2 upper case');
+       return;
+     }
+
+     isLogin? processLogin(email, password) : createNewUser(email, password);
+  }
+  
+
+  const processLogin = (email, password) =>{
+    signInWithEmailAndPassword(auth, email, password)
+    .then(result=>{
+      const user = result.user;
+       console.log(user);
+       setError('');
+    })
+    .catch(error =>{
+      setError(error.message);
+    })
+  }
+  const createNewUser = ( email, password) =>{
+    createUserWithEmailAndPassword(auth, email, password)
+     .then(result =>{
+       const user = result.user;
+       console.log(user);
+       setError('');
+     })
+     .catch(error =>{
+       setError(error.message);
+     })
+  }
 
     const signInUsingGoogle = () =>{
         setIsLoading(true);
@@ -48,10 +104,17 @@ const useFirebase = () => {
             setIsLoading(false);
 
           });
-    }, [ ])
+    }, [])
     return{
         user,
+        error,
         isLoading,
+        processLogin,
+        createNewUser,
+        handleEmailChange,
+        handlePasswordChange,
+        toggleLogIn,
+        handleRegistration,
         signInUsingGoogle,
         signInUsingGithub,
         logOut

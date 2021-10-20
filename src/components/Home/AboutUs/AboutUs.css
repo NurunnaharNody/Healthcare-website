@@ -1,0 +1,24 @@
+ /* about us section styles  */
+.about-person{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-image img{
+    width:100%;
+    padding: 20px;
+}
+
+
+/* details style  */
+.about-detail{
+    margin: 20px;
+}
+
+@media only screen and (max-width:688px){
+    .about-person{
+        display: flex;
+        flex-direction: column;
+    }
+}

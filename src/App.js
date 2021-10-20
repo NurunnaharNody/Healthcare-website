@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter,Switch, Route } from 'react-router-dom';
 import './App.css';
 import Details from './components/Details/Details/Details';
+import AboutUs from './components/Home/AboutUs/AboutUs';
+import Contacts from './components/Home/Contacts/Contacts';
 import Footer from './components/Home/Footer/Footer';
 import Header from './components/Home/Header/Header';
 import Home from './components/Home/Home/Home';
@@ -34,6 +36,12 @@ function App() {
        <Route path="/recommandations">
          <Recommandations></Recommandations>
          </Route>
+         <Route path="/aboutus">
+           <AboutUs></AboutUs>
+           </Route>
+         <Route path="/contacts">
+           <Contacts></Contacts>
+           </Route>
      <PrivateRoute path="/details/:serviceId">
          <Details></Details>
        </PrivateRoute>
